@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+ <title>Coffee Shop</title> 
+ <script rel="stylesheet" src="shop.js" type="text/Javascript"></script>
+ <link rel="stylesheet" href="shop.css" type="text/css">
+ 
+</head>
+<body>
+  
+
+
+  <div class="pricelist">
+   
+    <h1>COFFEE MENU</h1>
+    <table>
+      
+      <tr>
+        <td>Product ADD-ON</td>
+        <td>Milk</td>
+        <td>Cream</td>
+        <td>Latte</td>
+      </tr>
+      <tr>
+        <td>Espersso</td>
+        <td>60</td>
+        <td>75</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Cappucino</td>
+        <td>80</td>
+        <td>90</td>
+        <td>125</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>100</td>
+        <td>125</td>
+        <td>150</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <form class="bill1">
+    <select id="sf">
+  <option selected value = "Espersso-Milk">Espersso-Milk</option>
+  <option value = "Espersso-Cream">Espersso-Cream</option>
+  <option value = "Espersso-Latte">Espersso-Latte</option>
+  <option value = "Cappucino-Milk">Cappucino-Milk</option>
+  <option value = "Cappucino-Cream">Cappucino-Cream</option>
+      <option value = "Cappucino-Latte">Cappucino-Latte</option>
+      <option value = "Latte-Milk">Latte-milk</option>
+      <option value = "Latte-Cream">Latte-Cream</option>
+      <option value = "Latte-Latte">Latte-Latte</option>
+</select>
+    <input type="text" id="entrybox" pattern="\d*" placeholder="Input Amount">&nbsp;<b>No. of Coffees</b>&nbsp;&nbsp;
+    <input type="button" value="ADD T0 CART" class="mybutton" id="getme">
+  </form>
+  <br><br>
+  <textarea class="bill" cols="100" rows="12" id="writeme"></textarea>
+  <br>
+  <input type="submit" value="CLEAR TEXTAREA" class="mybutton bill3" id="clr">
+  <input type="submit" value="PAY BILL" class="mybutton bill2" id="out">
+  </body>
+
+</html>
